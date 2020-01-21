@@ -1,1 +1,87 @@
-<p>close-pos works!</p>
+<h3 class="mb-4 text-center">Cierre de caja</h3>
+
+<div class="form-group">
+    <div [formGroup]="createForm">
+        <div class="row mb-3">
+            <div class="col-6">
+                <label>date_close</label>
+                <div class="input-group">
+                    <input type="date" class="form-control" formControlName="date_close">
+                </div>
+            </div>
+            <div class="col-6">
+                <label>hour_close</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" formControlName="hour_close">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <label>Value card</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="number" class="form-control" formControlName="value_card" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <label>Value cash</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="number" class="form-control" formControlName="value_cash" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-4">
+                <label>Value close</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="number" class="form-control" formControlName="value_close" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <label>Value open</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="number" class="form-control" formControlName="value_open" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <label>Value sales</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="number" class="form-control" formControlName="value_sales" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="btn btn-primary" >Obtener información</button>
+<button class="btn btn-success float-right" >Guardar información</button>
