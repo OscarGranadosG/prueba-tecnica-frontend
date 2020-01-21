@@ -35,4 +35,11 @@ el index.html
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-https://github.com/OscarGG13/prueba-tecnica-frontend/master/src/assets/apertura.jpg
+## Apertura caja
+
+https://github.com/OscarGG13/prueba-tecnica-frontend/blob/master/src/assets/apertura.JPG
+
+
+## Cierre caja
+
+https://github.com/OscarGG13/prueba-tecnica-frontend/blob/master/src/assets/cierre.JPG
