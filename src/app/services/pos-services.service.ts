@@ -12,6 +12,8 @@ export class PosServicesService {
 
   private getOpenPosUrl = this.baseUrl + '/cashier/balance';
   private saveOpenPosUrl = this.baseUrl + '/cashier/balance/open/day';
+  private getClosePosUrl = this.baseUrl + '/has/open/cashier/balance';
+  private saveClosePosUrl = this.baseUrl + '/cashier/balance/close/day';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -21,6 +23,14 @@ export class PosServicesService {
 
   public saveOpenPosService(formdata: FormData): Observable<Object> {
     return this.httpClient.post( this.saveOpenPosUrl, formdata, {responseType: 'json'});
+  }
+
+  public getClosePosService(): Observable<Object> {
+    return this.httpClient.get( this.getClosePosUrl, {responseType: 'json'});
+  }
+
+  public saveClosePosService(formdata: FormData): Observable<Object> {
+    return this.httpClient.post( this.saveClosePosUrl, formdata, {responseType: 'json'});
   }
 
 

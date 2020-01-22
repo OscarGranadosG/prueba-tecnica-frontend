@@ -1,7 +1,8 @@
 <h3 class="mb-4 text-center">Cierre de caja</h3>
 
-<div class="form-group">
-    <div [formGroup]="createForm">
+
+<form [formGroup]="createForm" >
+    <div class="form-group">
         <div class="row mb-3">
             <div class="col-6">
                 <label>date_close</label>
@@ -81,7 +82,14 @@
             </div>
         </div>
     </div>
+</form>
+
+<button class="btn btn-primary" (click)="getDataClose()">Obtener información</button>
+<button class="btn btn-success float-right" (click)="saveCloseData()" >Guardar información</button>
+
+<div class="row">
+    <div class="alert alert-info col-4">{{ data | json }}</div>
+    <div class="col-4"></div>
+    <div class="alert alert-info col-4">{{ data | json }}</div>
 </div>
 
-<button class="btn btn-primary" >Obtener información</button>
-<button class="btn btn-success float-right" >Guardar información</button>

@@ -9,11 +9,11 @@
         <h4 class="text-center">Oscar Javier Granados Gomez</h4>
     </div>
 
-<div class="card mt-3">
-    <ul class="list-group">
-        <li *ngFor="let item of menuItems" class="list-group-item text-left" [routerLink]="item.path">
+<div class="mt-3">
+    <ul class="list-group col-6">
+        <button *ngFor="let item of menuItems" class="list-group-item text-left" [routerLink]="item.path">
             <strong>{{ item.title }}</strong>
-        </li>
+        </button>
     </ul>
 </div>
 
