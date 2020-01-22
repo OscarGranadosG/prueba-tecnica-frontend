@@ -1,12 +1,12 @@
 <h3 class="mb-4 text-center">Apertura de caja</h3>
 
-<div class="form-group">
-    <div [formGroup]="createForm">
+<form [formGroup]="createForm">
+    <div class="form-group">
         <div class="row mb-3">
             <div class="col-6">
                 <label>date_open</label>
                 <div class="input-group">
-                    <input type="date" class="form-control" formControlName="date_open">
+                    <input type="date" class="form-control" formControlName="date_open" >
                 </div>
             </div>
             <div class="col-6">
@@ -43,17 +43,17 @@
             </div>
         </div>
     </div>
-</div>
-
-
-
-<label>Observacion</label>
-<div class="input-group mb-3">
-    <input type="text" class="form-control" formControlName="observation">
-</div>
+    <label>Observacion</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" formControlName="observation">
+    </div>
+</form>
 
 <button class="btn btn-primary" (click)="loadOpenData()">Obtener información</button>
 <button class="btn btn-success float-right" (click)="saveOpenData()">Guardar información</button>
 
-<div class="alert alert-info">{{ data | json }}</div>
-
+<div class="row">
+    <div class="alert alert-info col-4">{{ data | json }}</div>
+    <div class="col-4"></div>
+    <div class="alert alert-info col-4">{{ results | json }}</div>
+</div>
