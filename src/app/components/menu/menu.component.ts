@@ -13,9 +13,13 @@ export class MenuComponent implements OnInit {
       title: 'Apertura Caja'
     },
     {
+      path: 'sale',
+      title: 'Realizar venta'
+    },
+    {
       path: 'close',
       title: 'Cierre Caja'
-    },
+    },  
   ];
 
   constructor() { }

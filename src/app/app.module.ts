@@ -8,13 +8,15 @@ import { ClosePosComponent } from './components/close-pos/close-pos.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CreateSaleComponent } from './components/create-sale/create-sale.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     OpenPosComponent,
-    ClosePosComponent
+    ClosePosComponent,
+    CreateSaleComponent
   ],
   imports: [
     BrowserModule,
