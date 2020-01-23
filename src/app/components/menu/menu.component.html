@@ -5,17 +5,14 @@
 <a href="https://github.com/OscarGG13/prueba-tecnica-frontend" target="_blank">Repostiorio Frontend Angular</a>
 <a href="https://github.com/OscarGG13/prueba-tecnica-frontend/blob/master/README.md" class="ml-5" target="_blank">Despliegue Angular</a>
     <div class= mt-4>
-        <h3 class="text-center">Prueba Tecnica</h3>
         <h4 class="text-center">Oscar Javier Granados Gomez</h4>
     </div>
 
 <div *ngFor="let item of menuItems">
-    <div class="mt-2">
-        <div class="">
-            <button class=" btn btn-outline-info col-3" [routerLink]="item.path">
-                <strong>{{ item.title }}</strong>
-            </button>
-        </div>
+    <div class="mt-2">      
+        <button class=" btn btn-outline-info col-3" [routerLink]="item.path">
+            <strong>{{ item.title }}</strong>
+        </button>
     </div>
 </div>
 

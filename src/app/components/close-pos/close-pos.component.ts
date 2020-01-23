@@ -62,12 +62,14 @@ export class ClosePosComponent implements OnInit {
 
   setDataClose() {
     let data = this.data.results[0];
+    let valueopen = this.data.results[1];
+    let valueclose = parseInt(data.value_sales) + parseInt(valueopen.value_open);
       this.formCtrls.date_close.setValue(data.date_close);
       this.formCtrls.hour_close.setValue(data.hour_close);
       this.formCtrls.value_card.setValue(data.value_card);
       this.formCtrls.value_cash.setValue(data.value_cash);
-      this.formCtrls.value_close.setValue(data.value_close);
-      this.formCtrls.value_open.setValue(data.value_open);
+      this.formCtrls.value_close.setValue(valueclose);
+      this.formCtrls.value_open.setValue(valueopen.value_open);
       this.formCtrls.value_sales.setValue(data.value_sales);
   }
 
